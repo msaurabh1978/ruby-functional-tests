@@ -67,6 +67,7 @@ require 'pages/personal_access_token_page'
 require 'pages/admin_access_token_page'
 require 'pages/elastic_agent_profiles_page'
 require 'pages/elastic_profiles_page'
+require 'pages/config_repos_page'
 
 
 module Helpers
@@ -257,6 +258,10 @@ module Helpers
 
     def parameters_page
       Pages::ParametersPage.new
+    end
+
+    def config_repos_page
+      Pages::ConfigReposPage.new
     end
 
   end
